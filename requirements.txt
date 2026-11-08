@@ -2,4 +2,4 @@ streamlit==1.39.0
 openai==1.54.0
 python-dotenv==1.0.1
 audio-recorder-streamlit
-pillow
+pillow==10.4.0
