@@ -195,7 +195,7 @@ elif page == "⏱️ Քննական Քարտեզ":
     with left:
         st.subheader("📅 AI Roadmap")
         subject = st.text_input("Առարկա", placeholder="Օր.՝ Կենսաբանություն")
-      exam_date = st.date_input("Քննության օրը", min_value=date.today())
+        exam_date = st.date_input("Քննության օրը", min_value=date.today())
         topics = st.text_area("Թեմաներ (ստորակետով)", placeholder="Բջիջ, ֆոտոսինթեզ, գենետիկա")
         if st.button("🗺️ Կազմել պլանը", type="primary"):
             days_left = (exam_date - date.today()).days
