@@ -44,9 +44,9 @@ def summarize_and_quiz(text: str, num_questions: int = 5) -> dict:
 Պատասխանիր ՄԻԱՅՆ վավեր JSON-ով, առանց լրացուցիչ տեքստի կամ `json ֆենսերի։
 
 ՏԵՔՍՏ:
-\"\"\"
+"""
 {text}
-\"\"\"
+"""
 """
     response = _model().generate_content(
         prompt,
