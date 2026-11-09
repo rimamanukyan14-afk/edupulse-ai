@@ -22,9 +22,11 @@ def _model(model_name: str = "gemini-1.5-flash"):
 
 def _parse_json(text: str) -> dict:
     text = text.strip()
-    if text.startswith(""):
+    if text.startswith("
+"):
         text = text.split("\n", 1)[1]
-        text = text.rsplit("    return json.loads(text.strip())
+        text = text.rsplit("
+    return json.loads(text.strip())
 
 
 def summarize_and_quiz(text: str, num_questions: int = 5) -> dict:
@@ -80,7 +82,3 @@ def generate_study_plan(subject: str, exam_date: str, days_left: int, topics: st
     )
     response = _model().generate_content(prompt, generation_config={"temperature": 0.5})
     return response.text
-
-
- 
-  
